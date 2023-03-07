@@ -10,6 +10,8 @@ Sphinx = "*"
 
 [packages]
 awscli = "*"
+intersect = "*"
+python-dotenv = "*"
 
 [requires]
 python_version = "3.8"
