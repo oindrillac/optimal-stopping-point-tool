@@ -14,10 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     container: 
       image: quay.io/aicoe/ocp-ci-analysis
-      env:
-        GITHUB_REPO: ${{ secrets.REPO }}
-        GITHUB_ORG: ${{ secrets.ORG }}
-        GITHUB_ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+    env:
+      GITHUB_REPO: ${{ secrets.REPO }}
+      GITHUB_ORG: ${{ secrets.ORG }}
+      GITHUB_ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
