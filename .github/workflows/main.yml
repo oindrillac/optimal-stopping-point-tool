@@ -15,8 +15,8 @@ jobs:
     container: 
       image: quay.io/aicoe/ocp-ci-analysis
       env:
-        GITHUB_REPO: ${{ github.event.client_payload.REPO }}
-        GITHUB_ORG: ${{ github.event.client_payload.ORG }}
+        GITHUB_REPO: ${{ secrets.REPO }}
+        GITHUB_ORG: ${{ secrets.ORG }}
         GITHUB_ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
     steps:
