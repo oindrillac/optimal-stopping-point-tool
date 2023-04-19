@@ -25,10 +25,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run Jupyter Notebook
-        run: jupyter nbconvert --to notebook --execute notebooks/access_github_ci_data.ipynb --TemplateExporter.exclude_input=True --ExecutePreprocessor.kernel_name='python3' --output 01_access_github_ci_data_notebook_executed
+        run: jupyter nbconvert --to notebook --execute notebooks/access_github_ci_data.ipynb --TemplateExporter.exclude_input=True --ExecutePreprocessor.kernel_name='python3' --output notebooks/01_access_github_ci_data_notebook_executed
       - name: commit updated notebook 4
         uses: EndBug/add-and-commit@v7
         with:
           author_name: ochatter@redhat.com
           message: "Updated data collection"
-          add: "01_access_github_ci_data_notebook_executed.ipynb" 
+          add: "notebooks/01_access_github_ci_data_notebook_executed.ipynb" 
