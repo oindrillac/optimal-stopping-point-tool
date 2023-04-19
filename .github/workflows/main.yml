@@ -32,6 +32,6 @@ jobs:
           python -m pip install --upgrade pip 
           pip install -r requirements.txt
       - name: Run Jupyter Notebook
-        uses: actions/starter-workflows/jupyter-notebook-action@main
+        uses: ./actions/starter-workflows/jupyter-notebook-action@main
         with:
           path: notebooks/access_github_ci_data.ipynb
