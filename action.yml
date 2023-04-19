@@ -1,0 +1,20 @@
+name: Optimal Stopping Point
+description: 'This is the github action to predict optimal stopping point for long running tests'
+author: 'redhat-et'
+
+inputs:
+  MODE: 
+    description: "Threshold"
+    required: false
+    default: 90
+    
+outputs:
+  prediction:
+    description: 'Provides a prediction of an optimal stopping point for long running tests'
+    
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'git-pull-request'
+  color: 'purple'
